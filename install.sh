@@ -2,6 +2,7 @@
 
 sudo cp -R tobii_usb_service/etc/* /etc/
 sudo cp -R tobii_usb_service/usr/* /usr/
+tar -xzf tobii_engine/usr/share/tobii_engine.tar.gz -C tobii_engine/usr/share/
 sudo cp -R tobii_engine/etc/* /etc/
 sudo cp -R tobii_engine/usr/* /usr/
 sudo systemctl daemon-reload
