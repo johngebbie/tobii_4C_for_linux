@@ -1,0 +1,16 @@
+[Unit]
+Description=Tobii USB daemon
+After=syslog.target network.target
+
+[Service]
+Type=simple
+PIDFile=/run/tobiiusb/tobiiusbservice.pid
+ExecStartPre=-/bin/mkdir /run/tobiiusb
+ExecStartPre=-/bin/touch /run/tobiiusb/tobiiusbservice.pid
+ExecStart=/usr/local/sbin/tobiiusbserviced
+ExecStop=-/bin/rm -R /run/tobiiusb
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
