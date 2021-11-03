@@ -11,14 +11,14 @@ As you may already know, [@Eitol](https://github.com/Eitol) kindly provided a [s
 
 ### Installing / uninstalling
 
-Run the `install.sh` script int the root folder for a system-wide installation of all required services. Please check wether the paths contained in the script match your own (your are doing this at your own risk):
+Run the `install.sh` script in the root folder for a system-wide installation of all required services. Please check wether the paths contained in the script match your own (**your are doing this at your own risk**):
 
 ```
 chmod u+x install.sh
 ./install.sh
 ```
 
-To uninstall Tobii 4C tools and services (again, check the paths beforehand):
+To uninstall Tobii 4C tools and services (again, **check the paths beforehand**):
 
 ```
 chmod u+x uninstall.sh
@@ -29,7 +29,7 @@ chmod u+x uninstall.sh
 
 ### Examples
 
-There are two examples for testing the installation. One was provided by [@Eitol](), which is available in the subfolder `test`. The other one is a “streamer” app that keeps updating the eye gaze position via UDP sockets at `127.0.0.1:9998`, and your can find it in `streamer`. Assuming you have cmake, you could do the following:
+There are two examples for testing the installation. One was provided by [@Eitol](), which is available in the subfolder `test`. The other one is a “streamer” app that keeps updating the eye gaze position via UDP sockets at `127.0.0.1:9998`, and your can find it in `streamer`. Assuming you have cmake, you should be able to compile them with the following:
 
 ```
 cd examples/test
@@ -43,11 +43,10 @@ make
 
 ##### Disclaimer
 
-I don’t have any relationship with Tobii and I don’t own the libraries and the tools provided here. They have been made [publicly available](https://developer.tobii.com/community/forums/topic/tobii-4c-eye-tracker-on-linux/) by Tobii and you should check with them about license.
+I do not have any relationship with Tobii and I do not own the libraries and the tools provided here. As far as I know, they have been made [publicly available](https://developer.tobii.com/community/forums/topic/tobii-4c-eye-tracker-on-linux/) by Tobii and you should check with them about licensing.
 
 
 
 ##### Acknowledgments
 
 Special thanks to [@Eitol](https://github.com/Eitol) for putting together all the necessary tools from Tobii.
-
