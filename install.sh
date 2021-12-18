@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sudo cp -R tobii_usb_service/etc/* /etc/
 sudo cp -R tobii_usb_service/usr/* /usr/

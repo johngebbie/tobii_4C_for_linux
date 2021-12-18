@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sudo systemctl disable tobii_engine.service
 sudo systemctl disable tobiiusb.service
